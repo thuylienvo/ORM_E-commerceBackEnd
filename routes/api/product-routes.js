@@ -71,7 +71,7 @@ router.post('/', (req, res) => {
     {
       id: req.params.id,
       product_name: req.body.product_name,
-      stock: req.body.stick,
+      stock: req.body.stock,
       category_id: req.body.category_id,
       price: req.body.price,
       tagIds: req.body.tagIds
