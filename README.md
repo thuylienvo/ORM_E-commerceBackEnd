@@ -32,7 +32,7 @@
   ## Usage 
   Installation will require installing the dependencies listed above. From the root directory, access MqSQL shell and run the following:    
   ```
-  source de/schema.sql
+  source db/schema.sql
   ```   
   Confirm the DB has been successfully created by running: 
   ``` 
