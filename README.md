@@ -3,9 +3,10 @@
 ## Description
   A back-end application for an e-commerce site. 
 
-  [insert GIF]
+  ![ORM_EcommerceBackend](https://user-images.githubusercontent.com/79684575/122869115-6e098100-d2f1-11eb-9efb-47dea74d214d.gif)
 
-  See the full demonstation here: 
+
+  See the full demonstation here: https://youtu.be/tDbaJZod5hk 
 
 
   ## Table of Contents
