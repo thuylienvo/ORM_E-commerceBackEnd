@@ -21,10 +21,11 @@ router.get('/', (req, res) => {
 });
 
 router.get('/:id', (req, res) => {
+  console.log(req.params.id)
   // find a single tag by its `id`
   Tag.findOne({
     where: {
-      id: req.param.id
+      id: req.params.id
     },
     attributes: ['id', 'tag_name'],
     include: [
