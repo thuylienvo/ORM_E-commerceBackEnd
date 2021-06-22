@@ -34,8 +34,8 @@ router.get('/:id', (req, res) => {
         attributes: ['product_name', 'id', 'price', 'category_id', 'stock'],
       }
     ]
-  }).then(dbUserData => {
-    if (!dbUserData) {
+  }).then(dbTagData => {
+    if (!dbTagData) {
       res.status(404).json({ message: 'No user found with this id' });
       return;
     }
@@ -63,10 +63,10 @@ router.put('/:id', (req, res) => {
   // update a tag's name by its `id` value
   Tag.update(req.body, {
     where: {
-      id: req.body.params.id
+      id: req.params.id
     }
-  }).then(dbUserData => {
-    if (!dbUserData) {
+  }).then(dbTagData => {
+    if (!dbTagData[0]) {
       res.status(404).json({ message: 'No user found with this id' });
       return;
     }
@@ -84,8 +84,8 @@ router.delete('/:id', (req, res) => {
     where: {
       id: req.params.id
     }
-  }).then(dbUserData => {
-    if (!dbUserData) {
+  }).then(dbTagData => {
+    if (!dbTagData) {
       res.status(404).json({ message: 'No user found with this id' });
       return;
     }
